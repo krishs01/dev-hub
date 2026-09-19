@@ -43,9 +43,10 @@ export default function Partners() {
               <h1 className="text-2xl">{partner.name}</h1>
               <span className="text-text-secondary">{partner.description}</span>
               <Link
-                href={partner.url}
+                href={`${partner.url}?utm_source=devhub&utm_medium=partner&ref=devhub`}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-fit"
               >
                 <Button icon={ArrowRight} className="text-sm px-sm py-xs">
                   See more
